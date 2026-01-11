@@ -1,0 +1,44 @@
+require:
+  - rubocop-rails
+
+Documentation:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  EnforcedStyle: normal
+
+Layout/EmptyLinesAroundAccessModifier:
+  EnforcedStyle: around
+
+Layout/LineLength:
+  Enabled: true
+  Max: 100
+  Include:
+    - app/**/*
+
+Style/Documentation:
+  Include:
+    - app/models/**/*
+    - lib/**/*
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes.rb
+    - lib/tasks/dev.rake
+    - config/environments/production.rb
+
+Naming/MethodParameterName:
+  Exclude:
+    - app/helpers/application_helper.rb
+
+Naming/HeredocDelimiterNaming:
+  Exclude:
+    - public/templates/redcarpet/redcarpet.rb
+
+Rails/OutputSafety:
+  Exclude:
+    - app/models/ad.rb
