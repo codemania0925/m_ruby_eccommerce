@@ -54,3 +54,23 @@ Run in you console:
 ```
 rails dev:setup
 ```
+
+
+## Setup
+Run in your console:
+```
+bin/setup
+```
+
+## Rake Tasks
+
+Run in you console:
+```
+rails dev:setup
+
+## Rake Tasks
+
+Run in you console:
+```
+rails dev:setup
+```
