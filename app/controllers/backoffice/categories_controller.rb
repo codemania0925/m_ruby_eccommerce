@@ -33,6 +33,15 @@ module Backoffice
       end
     end
 
+    def update_category_bag
+      if @category.update(paramas_category)
+        redirect_to backoffice_categories_path,
+                    notice: "A categoria (#{@category.description}) foi atualizada com sucesso."
+      else
+        render :edit
+      end
+    end
+
     def set_category
       @category = Category.friendly.find(params[:id])
     end
